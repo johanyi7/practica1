@@ -17,9 +17,33 @@ public class TiposDeVariables {
         // Crea variables con el nombre del jugador, nivel, vida (double)
         // y si tiene armadura (boolean). Imprímelas como si fuese una ficha del jugador.
 
+        String nombreJugador = "Steve";
+        long nivel = 437483874;
+        double vida = 10.0;
+        boolean tieneArmadura = true;
+
+        System.out.println("Su Nombre es: " + nombreJugador + " su nivel es: " + nivel + "su vida es: " + vida + "tiene armadura: " + tieneArmadura);
+
+
 
         // ==============================
         // EJERCICIO 2 – Batalla rápida (Pokémon)
+
+        Integer rayo = 25;
+        Integer descarga = 20;
+        Integer ataquePikachu = rayo+descarga;
+
+        Integer escudoFuego = 40;
+        Integer barreraDeLlamas = 20;
+        Integer defensaCharmander = escudoFuego+barreraDeLlamas;
+
+        Integer dañoCausadoPorPikachu = defensaCharmander-ataquePikachu;
+        Integer X = dañoCausadoPorPikachu;
+
+
+        System.out.println("Daño hecho por Pikachu a charmander: " + X);
+
+
         // ==============================
         // Declara dos variables con el ataque de Pikachu y la defensa de Charmander.
         // Calcula el daño causado (ataque – defensa).
@@ -29,6 +53,15 @@ public class TiposDeVariables {
         // ==============================
         // EJERCICIO 3 – Monedas y compras (Fortnite)
         // ==============================
+
+
+        
+
+
+
+
+
+
         // Declara una variable con el número de V-Bucks que tiene un jugador.
         // Resta el precio de una skin (ej: 1200).
         // Imprime el resultado: "Después de comprar la skin, te quedan X V-Bucks".
