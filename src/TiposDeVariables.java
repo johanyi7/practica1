@@ -77,8 +77,6 @@ Integer velocidadTotal = velocidadBase + buffVelocidad;
 
 System.out.println("La velovidad final de Jinx es: " +  velocidadTotal);
 
-
-
         // Declara una variable con la velocidad base de un campeón
         // y otra con un buff de velocidad.
         // Calcula la velocidad final sumando ambos valores.
@@ -88,6 +86,15 @@ System.out.println("La velovidad final de Jinx es: " +  velocidadTotal);
         // ==============================
         // EJERCICIO 5 – Conversor de monedas de juego
         // ==============================
+
+
+Integer monedasMinecraft = 300;
+Integer Vbucks = 300*5;
+Integer RPlol = 300*2;
+
+System.out.println(" 300 monedas de minecraft son: " + monedasMinecraft + " 300 monedas de minecraft en Fortnite son: " + Vbucks + " 300 monedas de minecraft en lol son: " + RPlol);
+
+
         // Declara una cantidad de monedas de Minecraft.
         // Convierte a su equivalente en V-Bucks y en RP de LoL
         // usando tasas de cambio inventadas (ej: 1 moneda MC = 5 V-Bucks = 2 RP).
@@ -97,6 +104,11 @@ System.out.println("La velovidad final de Jinx es: " +  velocidadTotal);
         // ==============================
         // EJERCICIO 6 – Clasificación de jugador (Fortnite / LoL)
         // ==============================
+
+        
+
+
+
         // ESTE EJERCICIO INCLUYE SENTENCIAS DE CONTROL. No pertenece a tipos de variables.
         // Si te aburres, investiga cómo se haría y entiéndelo.
         //
