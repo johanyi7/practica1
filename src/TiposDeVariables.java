@@ -55,11 +55,11 @@ public class TiposDeVariables {
         // ==============================
 
 
-        
+Integer numeroBucksPepe = 13500;
+Integer precioSkin = 2000;
+Integer PavosRestantes = numeroBucksPepe-precioSkin;
 
-
-
-
+System.out.println("Despues de comprar la skin le quedan: " + PavosRestantes);
 
 
         // Declara una variable con el número de V-Bucks que tiene un jugador.
@@ -70,6 +70,11 @@ public class TiposDeVariables {
         // ==============================
         // EJERCICIO 4 – Velocidad de campeón (League of Legends)
         // ==============================
+
+
+
+
+
         // Declara una variable con la velocidad base de un campeón
         // y otra con un buff de velocidad.
         // Calcula la velocidad final sumando ambos valores.
