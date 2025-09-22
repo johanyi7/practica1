@@ -105,7 +105,14 @@ System.out.println(" 300 monedas de minecraft son: " + monedasMinecraft + " 300 
         // EJERCICIO 6 – Clasificación de jugador (Fortnite / LoL)
         // ==============================
 
-        
+        Integer kills = 10;
+        Integer asistencias = 2;
+        Integer muertes = 4;
+        Integer KDA = (kills + asistencias)/ muertes;
+ if (KDA >= 5);
+ System.out.println("jugador PRO");;
+
+
 
 
 
