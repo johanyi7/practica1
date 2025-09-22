@@ -71,7 +71,11 @@ System.out.println("Despues de comprar la skin le quedan: " + PavosRestantes);
         // EJERCICIO 4 – Velocidad de campeón (League of Legends)
         // ==============================
 
+Integer velocidadBase = 10;
+Integer buffVelocidad = 3;
+Integer velocidadTotal = velocidadBase + buffVelocidad;
 
+System.out.println("La velovidad final de Jinx es: " +  velocidadTotal);
 
 
 
