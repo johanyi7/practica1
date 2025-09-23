@@ -109,8 +109,11 @@ System.out.println(" 300 monedas de minecraft son: " + monedasMinecraft + " 300 
         Integer asistencias = 2;
         Integer muertes = 4;
         Integer KDA = (kills + asistencias)/ muertes;
- if (KDA >= 5);
- System.out.println("jugador PRO");;
+        System.out.println("el KDA del jugador es : " + KDA);
+
+if (KDA >= 5) {
+}
+
 
 
 
