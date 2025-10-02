@@ -21,10 +21,10 @@ public class RetoLogrosGamer_Enunciado {
         //
 
 
-        String juego = "Fortnite";
+        String juego = "LOL";
         Integer kills = 15;
         Integer muertes = 2;
-        Integer asistencias = 5;
+        Integer asistencias = 10;
         Integer tiempoMin = 20;
         Integer objetivos = 6;
         boolean desconexion = false;
@@ -32,51 +32,70 @@ public class RetoLogrosGamer_Enunciado {
         int dañoRecibido = 267;
         int oro = 150;
 
+
         //parte 2
 
-        if (desconexion = true && tiempoMin <5)
+        boolean hayRQ = (desconexion && (tiempoMin < 5));
+        if (hayRQ) {
             System.out.println("Logro NEGATIVO: Rage Quit");
-        int KDA = (kills+asistencias)/max(1,muertes);
-        if (KDA >= 5)
+        }
+        int KDA = (kills + asistencias) / max(1, muertes);
+        if (KDA >= 5 && (hayRQ == false)) {
             System.out.println("Jugador PRO");
+        }
         int puntoPor5Kills = 10;
-        int gruposDe5Kills = kills/5;
+        int gruposDe5Kills = kills / 5;
         int puntos = gruposDe5Kills * puntoPor5Kills;
         if (puntos >= 20)
             System.out.println("Logro: Imparable");
-        if (muertes <=4 && kills >= 15)
+        if (muertes <= 4 && kills >= 15)
             System.out.println("Logro: Intocable");
         if (tiempoMin >= 20)
             System.out.println("Logro: Viciado");
-        if (dañoHecho > dañoRecibido*2)
+        if (dañoHecho > dañoRecibido * 2)
             System.out.println("Logro: Verdadero Intocable");
-        if (objetivos >=5)
+        if (objetivos >= 5)
             System.out.println("Verdadero jugador");
 
         //parte 3
 
-        {
-            if (juego == "Fortnite")
-                if (kills >= 15 && muertes <= 2)
-                    System.out.println("victoria agresiva");
+
+        if (juego ==("Fortnite")) {
+            if (kills >= 15 && muertes <= 2)
+                System.out.println("victoria agresiva");
             if (oro >= 2000)
                 System.out.println("Ahorrista de V-Bucks");
         }
 
+        if (juego.equals("LOL")) {
+            if (objetivos >= 2 && asistencias >= 10)
+                System.out.println("Shotcaller");
+            if (dañoHecho >= 30000 && muertes <= 3)
+                System.out.println("Carry principal");
+        }
 
+        if (juego.equals("Minecraft")) {
+            if (tiempoMin >= 45 && dañoRecibido == 0)
+                System.out.println("Superviviente pacífico");
+            if (objetivos >= 5)
+                System.out.println("Constructor incansable");
+        }
 
+        if (juego.equals("Pokemon")) {
+            if (kills >= 6 && dañoRecibido <= 1000)
+                System.out.println("Entrenador maestro");
+            if (asistencias >= 3)
+                System.out.println("Apoyo del equipo");
+        }
 
-
-
-
-
-
-
-
-
-
-
-
+        //Parte 4
+        {
+            boolean AFK = (muertes == 0 && kills == 0 && asistencias == 0 && tiempoMin <= 2);
+            if (AFK) {
+                System.out.println("partida inválida: AFK");
+            }
+        }
+        //
 
 
         // ------------------------------------------------------------
@@ -273,6 +292,16 @@ public class RetoLogrosGamer_Enunciado {
 
 
         // ======= TU CÓDIGO AQUÍ =======
+
+
+
+
+
+        //como hacer para leer valores desde la linea de comandos
+
+
+
+
 
 
     }
